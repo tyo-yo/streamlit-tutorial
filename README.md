@@ -7,6 +7,12 @@ StremlitをWebで遊ぶチュートリアル。poetryで管理できる。
 
 デプロイ方法
 ```
-heroku create --buildpack https://github.com/moneymeets/python-poetry-buildpack.git
+# 初回のみ
+heroku create
+heroku buildpacks:clear
+heroku buildpacks:add https://github.com/moneymeets/python-poetry-buildpack.git
+heroku buildpacks:add heroku/python
+
+# 変更ごとに
 git push heroku master
 ```
