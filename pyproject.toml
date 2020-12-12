@@ -5,7 +5,7 @@ description = ""
 authors = ["Tomoaki Nakamura <tyo_yo@icloud.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "3.7.6"
 streamlit = "^0.72.0"
 
 [tool.poetry.dev-dependencies]
